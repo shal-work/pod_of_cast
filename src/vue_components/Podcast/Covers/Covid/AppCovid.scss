@@ -1,0 +1,24 @@
+.covid {
+    position: relative;
+    &__covid1 {
+        position: absolute;
+        top: 43%;
+        left: 6%;
+        width: 18%;
+        height: 34%;
+    }
+    &__covid2 {
+        position: absolute;
+        top: 3%;
+        left: 24%;
+        width: 29%;
+        height: 30%;
+    }
+    &__covid3 {
+        position: absolute;
+        top: 28%;
+        left: 62%;
+        width: 24%;
+        height: 23%;
+    }
+}

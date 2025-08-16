@@ -1,0 +1,244 @@
+.pricing {
+    background-color: var(--white);
+    padding: 140px 140px 0;
+    padding: min(140px, max(var(--vw)* 140, 80px)) min(140px, max(var(--vw)* 140, 44px)) 0;
+    position: relative;
+    @media (max-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    &__headlines {
+        max-width: 629px;
+        position: relative;
+        margin: 0 auto;
+    }
+    &__title {
+        font-weight: 700;
+        // font-size: 59.3px;
+        font-size:  min(59.3px, max(var(--vw)* 59.3, 44px));
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    &__sub-title {
+        font-weight: 500;
+        font-size: 22.65px;
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+        color: var(--davys-grey);
+        // margin-bottom: 101px;
+        margin-bottom: min(101px, max(var(--vw)* 101, 44px));
+    }
+    &__body {
+        max-width: 1160px;
+        position: relative;
+        margin: 0 auto;
+        @media (max-width: 1438px) {
+             max-width: 766px;
+        }
+        @media (max-width: 1045px) {
+             max-width: 373px;
+        }
+    }
+    &__price {
+        border-radius: 8px;
+        border: 1.5px solid var(--black);
+        padding: 60px 40px 30px; 
+        padding-top: min(60px, max(var(--vw)* 60, 24px));
+        padding-left: min(40px, max(var(--vw)* 40, 24px)); 
+        padding-right: min(40px, max(var(--vw)* 40, 24px));  
+        margin-bottom: min(21px, max(var(--vw)* 21, 12px)); 
+        background-color: var(--white);
+        z-index: 10;
+        position: relative;
+        @media (max-width: 1045px) {
+            margin-bottom: 0;
+            border: none;
+            border-radius: 8px 8px 0 0;
+        }
+    }
+    &__benefits {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        min-height: 312px;
+        border-radius: 8px;
+        border: 1.5px solid var(--black);
+        background-color: var(--white);
+        z-index: 10;
+        position: relative;
+        @media (max-width: 1045px) {
+            border: none;
+            border-radius: 0 0 8px 8px;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            min-height: initial;
+        }
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    &__card {
+       width: 373px;
+        @media (max-width: 1045px) {
+            border: 2px solid var(--black);
+            border-radius: 8px;
+        }
+    }
+    &__card-title {
+        font-weight: 700;
+        font-size: 36.65px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        margin-bottom: 20px;
+    }
+    &__card-popular {
+        display: flex;
+        align-items: center;
+        &::after {
+            content: "MOST POPULAR";
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 160%;
+            letter-spacing: 0;
+            color: var(--white);
+            background-color: var(--vermillion);
+            margin-left: min(44px, max(var(--vw)* 44, 24px));
+            padding: 2px 4px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            border: 1.5px solid var(--vermillion);
+            word-wrap: break-word;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0;
+    }
+    &__control {
+        margin-top: 90px;
+        margin-top: min(90px, max(var(--vw)* 90, 40px)); 
+        display: flex;
+        justify-content: space-between;
+    }
+    &__value {
+        font-weight: 700;
+        font-size: 22.65px;
+        line-height: 152%;
+        letter-spacing: -0.02em;
+        color: var(--vermillion);
+        // padding-top: 10px;
+        &::after {
+            content: '/month';
+            font-family: Montserrat Alternates;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 160%;
+            letter-spacing: 0;
+            color: var(--black);
+            display: block;
+        }
+    }
+    &__benefits-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0;
+        color: var(--davys-grey);
+        margin-bottom: 21px;
+    }
+
+    &__benefits-list {
+        padding: 0;
+        margin: 0;
+    }
+    &__benefits-item {
+        list-style-type: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0;
+        padding-bottom: 10px;
+        &::before {
+            content: "•"; 
+            color: black; 
+            display: inline-block;
+            width: 10px; 
+        }
+    }
+    &__benefits-item_bold {
+        font-weight: 700;
+    }
+    &__popular {
+        background-color: var(--champagne);
+    }
+    &__three-rays {
+        position: absolute;
+        top: -39px;
+        left: -41px;
+        width: 65px;
+        height: 65px;
+        transform: rotateZ(280deg);
+    }
+    &__blob {
+        position: absolute;
+        top: -69px;
+        left: 92%;
+        width: 16%;
+        height: auto;
+        // width: 185px;
+        // height: 151px;
+        transform: rotateZ(73deg);
+    }
+    &__crooked {
+        // position: absolute;
+        // top: 611px;
+        // left: -90px;
+        // width: 16%;
+        // height: 19%;
+        // transform: rotateZ(211deg);
+
+        position: relative;
+        // top: -85px;
+        // left: -90px;
+        // width: 16%;
+        // height: 19%;
+        // width: 185px;
+        // height: 185px;
+        transform: rotateZ(211deg);
+
+
+
+        // top: -82px;
+        // left: -65px;
+        // width: 16%;
+        // height: 19%;
+        // width: 137px;
+        // height: 140px;
+
+        position: relative;
+        top: -94px;
+        left: -65px;
+        width: 12%;
+        width: 137px;
+        height: auto;
+
+    }
+    &__btn {
+        padding: 16px 32px;
+        box-shadow: 6px 6px 0px 0px var(--shadow);
+    }
+    &__squiggle {
+        top: -90px;
+    }
+}

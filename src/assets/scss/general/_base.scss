@@ -1,0 +1,52 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+* {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 160%;
+    letter-spacing: 0;
+    color: var(--black);
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --vw: calc(100vw/1440);
+    // --container-padding-x: 165px;
+    --container-padding-x: min(140px, max(var(--vw)* 140, 24px));
+    --container-width: min(1920px, max(var(--vw)* 1920, 24px));
+}
+body {
+    margin: 0;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #272a3466;
+}
+
+.container {
+    // max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin: 0 auto;
+    padding-right: var(--container-padding-x);
+    padding-left: var(--container-padding-x);
+    width: 100%;
+    max-width: var(--container-width);
+}
+.reset {
+    margin: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+    padding: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+}
+//прижать подвал / footer к низу, .conteiner { min-height: 100vh; display: flex; flex-direction: column;);
+.footer {
+    margin-top: auto;
+}

@@ -1,0 +1,47 @@
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 64px;
+    width: 68px;  
+    z-index: 20;
+    &__circle {
+        height: 64px;
+        width: 64px;
+        border: 2px solid var(--black);
+        border-radius: 50%;
+        position: absolute;
+    }
+    &__text {
+        position: absolute;
+        background-color: var(--champagne);
+        // margin: 0px 0 0 42px;
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 77%;
+        letter-spacing: -0.04em; //-4%
+        width: 34px;
+        padding: 5px 0 0 5px;
+    }
+    &__ackground-champagne {
+        background-color: var(--champagne);
+    }
+    &__ackground-white {
+        background-color: var(--white);
+    }
+
+    &__text-backlight {
+        font-family: Montserrat Alternates;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 90%;
+        color: var(--vermillion);
+        font-weight: 700;
+        letter-spacing: -0.04em; //-4%
+    }
+    &__mright {
+        margin-right: 31px;
+    }
+}

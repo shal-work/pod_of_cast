@@ -1,0 +1,124 @@
+.podcast-title {
+    position: relative;
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto min(203px, max(var(--vw)* 203, 40px));
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-areas: "area-left  areal-right"
+                             "area area";
+        align-items: center;
+    }
+    &__decor {
+        width: 30%;
+        position: relative;
+        @media (max-width: 768px) {
+            width: 100%;
+        }        
+    }
+    &__decor-left {
+        grid-area: area-left; 
+    }
+    &__decor-right {
+        grid-area: area-right; 
+    }
+    &__crooked {
+        top: max(-9px, min(var(--vw) * -9, 0px));
+        left: max(-198px, min(var(--vw) * -198, 0px));
+        width: min(490px, max(var(--vw) * 490, 34px));
+        height: min(477px, max(var(--vw) * 477, 40px));
+        position: absolute;
+        transform: rotateZ(168deg);
+        @media (max-width: 768px) {
+            position: relative;
+        }        
+    }
+    &__blob {
+        top: min(238px, max(var(--vw)* 238, 0px));
+        left: min(262px, max(var(--vw)* 262, 10px));
+        width:  min(59px, max(var(--vw)* 59, 10px));
+        height: min(59px, max(var(--vw)* 59, 10px));
+        position: absolute;
+        transform: rotateZ(383deg);
+    }
+    &__content {
+        display: block;
+        position: relative;
+        width: 40%;
+        padding-top: min(44px, max(var(--vw)* 44, 20px));
+        grid-area: area;
+        @media (max-width: 768px) {
+            width: 100%;
+            text-align: center;
+            padding: 12px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 96px;
+        font-size: min(96px, max(var(--vw)* 96, 40px));
+        line-height: 100%;
+        letter-spacing: -0.04em;
+        text-align: center;
+    }
+
+    &__title-backlight {
+        font-weight: 700;
+        font-size: min(96px, max(var(--vw)* 96, 40px));
+        line-height: 100%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: var(--vermillion);
+    }   
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        text-align: center;
+        color: var(--davys-grey);
+        padding: min(26px, max(var(--vw)* 26, 5px)) min(132px, max(var(--vw)* 132, 20px));
+    }
+    &__decor-block {
+        position: relative;
+        top: min(121px, max(var(--vw)* 121, 60px));
+        left: min(216px, max(var(--vw)* 216, 60px));
+        height: min(215px, max(var(--vw)* 215, 160px));
+        width: 157px;
+        width: min(157px, max(var(--vw)* 157, 110px));
+        @media (max-width: 768px) {
+            top: 0;
+        }
+    }
+    &__star-blue {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: min(155px, max(var(--vw)* 155, 60px));
+        height: min(161px, max(var(--vw)* 161, 60px));
+    }
+    &__star-vermillion {
+        top: min(134px, max(var(--vw)* 134, 10px));
+        right: 0;
+        width: 59px;
+        height: 61px;
+        position: absolute;
+    }
+    &__star-black {
+        bottom: 0;
+        left: min(18px, max(var(--vw)* 18, 0px));
+        width: 36px;
+        height: 38px;
+        position: absolute;
+    }
+    &__btn {
+        position: absolute;
+        top: min(76px, max(var(--vw)* 76, 20px));
+        left: min(250px, max(var(--vw)* 250, 40px));
+        padding: min(20px, max(var(--vw)* 20, 10px)) min(47px, max(var(--vw)* 47, 10px));
+        @media (max-width: 768px) {
+            position: static;
+        } 
+    }
+}

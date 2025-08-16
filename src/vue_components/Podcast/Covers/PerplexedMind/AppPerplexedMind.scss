@@ -1,0 +1,30 @@
+.perplexed {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    &__ellipse {
+        position: absolute;
+        top: 33%;
+        left: 48%;
+        width: 21%;
+        height: 21%;  
+    }
+    &__crooked {
+        position: absolute;
+        top: 56%;
+        left: 40%;
+        width: 21%;
+        height: 16%;
+        rotate: 114deg;
+        transform: scale(-1, 1);
+        stroke-width: 2.5;
+    }
+    &__blob {
+        position: absolute;
+        top: 36%;
+        left: 34%;
+        width: 12%;
+        height: 13%;
+        rotate: 17deg;
+    }
+}

@@ -1,0 +1,296 @@
+// прячем заголовок h1 
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    // clip: rect(0 0 0 0);
+    // clip-path: rect(0 0 0 0);
+    clip-path: polygon(0px 0px, 0px 0px,0px 0px, 0px 0px);
+}
+// прячем прокрутку
+.page {
+    // overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    padding: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+    // background-color: var(--black);
+}
+.page.none-scroll {
+    overflow: hidden;
+}
+.none-scroll {
+    overflow: hidden;
+}
+// .main {
+//     // user-select: none; 
+// }
+
+.svg {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    &_stroke-champagne {
+        stroke: var(--champagne);
+    }
+
+    &_stroke-vermillion {
+        stroke: var(--vermillion);
+    }
+
+    &_stroke-pewter-blue {
+        stroke: var(--pewter-blue);
+        fill: none;
+    }
+
+    &_stroke-black {
+        stroke: var(--black);
+    }
+
+    &_fill-black {
+        fill: var(--black);
+    }
+    &_black {
+        fill: var(--black);
+        stroke: var(--black);
+    }
+    &_fill-vermillion {
+        fill: var(--vermillion);
+    }
+    &_vermillion {
+        fill: var(--vermillion);
+        stroke: var(--vermillion);
+    }
+    &_pewter-blue {
+        stroke: var(--pewter-blue);
+        fill: var(--pewter-blue);
+    }
+    &_fill-green {
+        fill: var(--green);
+    }
+    &_fill-white {
+        fill: var(--white);
+    }
+}
+
+.quotation-marks {
+    width: 43px;
+    height: 47px;
+    @media (max-width: 412px) {
+        width: 34px;
+        height: 39px;
+    }
+}
+.control {
+    display: flex;
+    margin-left: 145.5px;
+    margin-left: min(145.5px, max(var(--vw)* 145.5, 24px));
+}
+
+.arrow {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border-color: var(--vermillion);
+    border-style: solid;
+    border-width: 2.5px;
+    padding: 5px;
+    cursor: pointer;
+    &_default {
+        border-color: var(--black);
+    }
+    &_left {
+        margin-right: 30.5px;
+    }
+    &_right {
+        transform: rotate(180deg);
+    }
+    &_hide {
+        visibility: hidden;
+    }
+}
+
+.arrow_default .svg {
+    fill: var(--black);
+    stroke: var(--black);
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 10px;
+    max-width: 737px;
+    width: 100%;
+    &__svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    &__avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+    &_testimonials {
+        justify-content:  flex-start;
+    }
+}
+
+.icon {
+	max-width: 24px;
+	max-height: 24px;
+	margin-right: 10px;
+	&__item {
+		width: 100%;
+		height: 100%;
+	}
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+
+.icon12 {
+	max-width: 12px;
+	max-height: 12px;
+	margin-right: 10px;
+}
+
+// .decor-squiggle {
+//     left: 0;
+//     position: absolute;
+//     top: 92.5%;
+//     z-index: 10;
+//     margin: 0 auto;
+//     width: 100%;
+// }
+
+.squiggle {
+    z-index: 10;
+    width: 100%;
+    height: 0;
+    position: relative;
+    &__svg {
+        height: auto;
+    }
+}
+
+
+.anima-swing {
+    will-change: transform;
+    animation:  1s ease-in-out infinite swing;
+} 
+
+
+@keyframes swing {
+    from {
+        transform: rotateZ(353deg);
+    }
+
+    30% {
+        transform: rotateZ(370deg);
+    }
+
+    40% {
+        transform: rotateZ(353deg);
+    }
+
+    50% {
+        transform: rotateZ(375deg);
+    }
+
+    65% {
+        transform: rotateZ(353deg);
+    }
+
+    75% {
+        transform: rotateZ(355deg);
+    }
+
+    to {
+        transform: rotateZ(353deg);
+    }
+}
+
+.anima-about {
+    will-change: transform;
+    animation: 2s linear 1s forwards animaAbout;
+}
+
+@keyframes animaAbout { 
+    0% {
+        opacity: 0;
+        transform: translate(0px, 0px)rotate(0deg)scale(1.2);
+    }
+    90% {
+        transform: translate(10px, 10px)rotate(5deg)scale(1);
+        opacity: 1;
+    }  
+    100% {
+        transform: translate(0px, 0px)rotate(0deg)scale(1.2);
+        opacity: 1;
+    }  
+}
+
+.anima-rays {
+    will-change: transform;
+	// animation: .6s ease-in-out infinite mouth61, .6s ease-in-out infinite mouth6;
+	animation: 1.9s ease-in-out  rays;
+}
+
+@keyframes rays {
+    from {
+        opacity: 0.1;
+        transform: scale3d(.2,.2,.2)
+    }
+    10% {
+        opacity: .21;
+        transform: scale3d(.8,.6,.8)
+    }
+    30% {
+        opacity: 1;
+        transform: scale3d(1,.9,1)
+    }
+    50% {
+        opacity: 1;
+        transform: scale3d(1,.6,1)
+    }
+    65% {
+        opacity: 1;
+        transform: scale3d(.2,.2,.2)
+    }
+    70% {
+        opacity: 1;
+        transform: scale3d(.2,.2,.2)
+    }
+    90% {
+        opacity: 0.3;
+        transform: scale3d(1,.9,1)
+    }
+    to {
+        opacity: 0;
+        transform: scale3d(1,1,1)
+    }
+}

@@ -1,0 +1,39 @@
+.quote {
+    text-align: center;
+    background-color: var(--champagne);
+    border-radius: 8px;
+    padding: 44px min(187px, max(var(--vw)* 187, 10px));
+    position: relative;
+    @media (max-width: 768px) {
+        padding: 40px 20px;
+    }
+    &__title {
+        font-family: Montserrat Alternates;
+        font-weight: 700;
+        font-size: 36.65px;
+        font-size: min(36.65px, max(var(--vw)* 36.65, 28px));
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    &__blob {
+        position: absolute;
+        top: -57px;
+        right: -111px;
+        rotate: 70deg;
+        width: 285px;
+        height: 148px;
+    }
+
+    &__crooked {
+        position: absolute;
+        top: 200px;
+        left: -156px;
+        rotate: 214deg;
+        height: 133px;
+        width: 346px;
+        stroke-width: 1;
+    }
+}

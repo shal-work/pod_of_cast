@@ -1,0 +1,56 @@
+.about {
+    background-color: var(--white);
+    padding-top: min(144px, max(var(--vw)* 144, 100px));
+    padding-bottom: 138px;
+    &__title {
+        font-weight: 700;
+        font-size: min(59.3px, max(var(--vw)* 59.3, 28px));
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        padding: 0  min(353px, max(var(--vw)* 353, 100px));
+        @media (max-width: 768px) {
+            padding: 0 13vw;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 115px;
+        justify-content: center;
+    }
+
+    &__item {
+        text-align: center;
+        margin-top: min(92px, max(var(--vw)* 92, 20px));
+        padding: 5px 12px;
+    }
+
+    &__picture {
+        width: 275px;
+        height: 275px;
+        position: relative;
+        margin: 0 auto min(39px, max(var(--vw)* 39, 10px));
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text {
+        font-family: Montserrat Alternates;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+        padding: 0 min(62px, max(var(--vw)* 62, 20px));
+        max-width: 661px;
+        width: 100%;
+    }
+    &__squiggle {
+        top: 64px;  
+    }
+}

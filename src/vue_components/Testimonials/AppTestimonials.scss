@@ -1,0 +1,74 @@
+.testimonials {
+    background-color: var(--alice-blue);
+    padding-top: 140px;
+    position: relative;
+    padding-bottom: 103px;
+    &__title {
+        font-weight: 700;
+        font-size: 59.3px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__paragraph {
+        text-align: center;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 22.65px;
+
+        line-height: 160%;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-top: 22px;
+        margin-bottom: 33px;
+        &_paragraph {
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+    &__scroll {
+        display: flex;
+        margin-top: 100px;
+        margin-top: min(100px, max(var(--vw)* 100, 34px));
+        margin-bottom: 64px;
+        transform: translateX(min(140px, max(var(--vw)* 140, 24px)));
+        width: fit-content;
+        transition: transform .65s cubic-bezier(.1,1,.1,1);
+        will-change: transform;
+        @media (max-width: 768px) {
+            transform: none;
+            padding-left: 20px;
+        }
+    }
+    &__item {
+        background-color: var(--white);
+        max-width: 570px;
+        width: 570px;
+        height: 360px;
+        margin-right: 20px;
+        padding: min(54px, max(var(--vw)* 54, 24px)) min(42px, max(var(--vw)* 42, 24px));
+        padding: 54px 42px;
+        border-radius: 8px;
+        position: relative;
+        box-sizing: border-box;
+        @media (max-width: 768px) {
+            width: 91vw;
+            height: auto;
+        }
+    }
+    &__rays {
+        position: absolute;        
+        width: 105px;
+        height: 105px;
+        left: 278px;
+        left: min(278px, max(var(--vw)* 278, 24px));
+        top: 71px; 
+    }
+    &__squiggle {
+        top: 31px;
+    }
+}

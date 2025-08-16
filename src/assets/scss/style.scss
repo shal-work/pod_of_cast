@@ -1,0 +1,44 @@
+@import './_main.scss';
+@import './components/ui';
+@import './general/gi';
+@import './helpers/classes.scss';
+
+// vue_components
+@import '@/page/PageHome/AppHome.scss';
+@import '@/vue_components/Headers/AppHeaders.scss';
+@import '@/vue_components/Footer/AppFooter.scss';
+@import '@/vue_components/Menu/AppMenu.scss';
+@import '@/vue_components/Logo/AppLogo.scss';
+@import '@/vue_components/Podcast/PodcastTitle/AppPodcastTitle.scss';
+@import '@/vue_components/Podcast/Covers/AppCovers.scss';
+@import '@/vue_components/Podcast/Covers/SelfConfidence/AppSelfConfidence.scss';
+@import '@/vue_components/Podcast/Covers/Teslaautopilot/AppTeslaautopilot.scss';
+@import '@/vue_components/Podcast/Covers/PerplexedMind/AppPerplexedMind.scss';
+@import '@/vue_components/Podcast/Covers/WomensRights/AppWomensRights.scss';
+@import '@/vue_components/Podcast/Covers/SocialClass/AppSocialClass.scss';
+@import '@/vue_components/Podcast/Covers/PlatformIco/AppPlatformIco.scss';
+@import '@/vue_components/Podcast/Covers/Covid/AppCovid.scss';
+
+@import '@/vue_components/Podcast/Platform/AppPlatform.scss';
+@import '@/vue_components/About/AppAbout.scss';
+@import '@/vue_components/Quote/AppQuote.scss';
+@import '@/vue_components/Testimonials/AppTestimonials.scss';
+@import '@/vue_components/Features/AppFeatures.scss';
+@import '@/vue_components/Content/AppContent.scss';
+@import '@/vue_components/Pricing/AppPricing.scss';
+@import '@/vue_components/Blog/AppBlog.scss';
+@import '@/vue_components/Cta/AppCta.scss';
+
+
+
+
+
+.fadeOut {
+    opacity: 0;
+}
+.fadeIn {
+    opacity: 1;
+}
+input[type=radio] {
+    display: none;
+}
