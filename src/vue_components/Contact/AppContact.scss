@@ -1,0 +1,191 @@
+.contact {
+    padding-left: min(337px, max(var(--vw)* 337, 24px));
+    padding-right: min(337px, max(var(--vw)* 337, 24px));
+    padding-top: min(140px, max(var(--vw)* 140, 24px));
+    padding-bottom: min(136px, max(var(--vw)* 136, 24px));
+    position: relative;
+    @media (max-width: 992px) {
+       padding: 10vw;
+    }
+    &__block {
+        position: relative;
+        max-width: 438px;
+        margin: 0 auto 20px;
+        transform: translateX(-7px);
+        margin-bottom: 58px;
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__sub-title {
+        font-weight: 500;
+        font-size: 22.65px;
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    &__pila {
+        position: absolute;
+        top: -45px;
+        right: 0; 
+        width: 69px;
+        height: 66px;
+        transform: rotateZ(20deg);
+    }
+    &__form {
+        border-top: 1px solid var(--davys-grey);
+        padding-top: 41px;
+    }
+    &__control {
+        display: flex;
+        margin-top: 17px;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: stretch;
+            row-gap: 20px;
+        }
+    }
+    &__footnote {
+        width: 23%;
+        &::before {
+            content: '*';
+            color: var(--vermillion);
+        }
+    }
+    &__btn {
+        padding: 20px 34px;
+    }
+    &__text {
+        max-width: 176px;
+    }
+    &__cubi {
+        position: absolute;
+        top: 28%;
+        right: 148px;
+        width: 61px;
+        height: 101px;
+        @media (max-width: 992px) {
+            top: 8%;
+            right: 10px;
+        }
+    }
+    &__crooked {
+        position: absolute;
+        top: 72%;
+        transform: translateY(-50%) rotateZ(215deg);
+        left: 25px;
+        width: min(140px, max(var(--vw)* 140, 34px));
+        height: min(139px, max(var(--vw)* 138, 34px)) 
+    }
+    &__squiggle {
+        top: 64px;
+    }
+
+}
+
+a.contact__underline {
+    color: var(--vermillion);
+    text-decoration: underline;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+    max-width: 764px;
+    margin: 0 auto;
+    &__row {
+        display: flex;
+        
+        justify-content: space-between;
+        width: 100%;
+        column-gap: 20px;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__control {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        @media (min-width: 1440px) {
+            flex: 0 1 372px;
+        }
+        @media (max-width: 992px) {
+            flex: 0 1 372px;
+            width: 48%;
+        }
+        @media (max-width: 768px) {
+            flex: 0 1 auto;
+            width: 100%;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__message {
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0;
+        margin-bottom: 15px;
+        &::after {
+            content: '*';
+            color: var(--vermillion);
+            margin-left: 4px;
+        }
+    }
+    &__input {
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0;
+        margin-bottom: 40px;
+
+        background-color: var(--white);
+        border: 1.5px solid var(--black);
+        border-radius: 4px;
+        padding: 18px 18px;
+        outline: 0;
+        cursor: pointer;
+        border-radius: 8px;
+        color: var(--black);
+
+        &::placeholder {
+            color: var(--davys-grey);
+        }
+
+        &:focus {
+            border-color: var(--vermillion);
+            background-color: var(--white);
+        }
+        @media (max-width: 412px) {
+            margin-bottom: 10px;
+        }
+        &_textarea {
+            margin-top: 10px;
+            height: 166px;
+            padding: 21px 18px;
+            overflow-y: scroll;
+            resize: none;
+            &::-webkit-scrollbar {
+                width: 14px;
+            }
+            &::-webkit-scrollbar-thumb {
+                border-radius: 8px; 
+                height: 50px;
+                background-color: #999; 
+                border: 4px solid #fff; 
+            }
+        }
+    }
+
+}

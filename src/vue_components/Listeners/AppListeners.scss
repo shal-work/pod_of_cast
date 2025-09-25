@@ -1,0 +1,101 @@
+.listeners {
+    // padding-top: min(140px, max(var(--vw)* 140, 24px));
+    padding-top: 140px;
+    padding-right: min(140px, max(var(--vw)* 140, 24px));
+    padding-left: min(140px, max(var(--vw)* 140, 24px));
+    padding-bottom: min(120px, max(var(--vw)* 120, 24px));
+    background-color: var(--white);
+    @media (max-width: 768px) {
+        padding-top: 90px;
+    }
+    &__title {
+        margin-bottom: 19px;
+    }
+    
+    &__info-title {
+        font-weight: 500;
+        font-size: 22.65px;
+        font-size: min(22.65px, max(var(--vw)* 22.65, 20px));
+        
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &__picture {
+        text-align: center;
+        position: relative;
+    }
+    &__saw {
+        position: absolute;
+        width: min(416px, max(var(--vw)* 416, 24px));
+        height: min(252px, max(var(--vw)* 252, 24px));
+        top: 29%;
+        left: 12%;
+    }
+    &__saw3 {
+        position: absolute;
+        top: 7%;
+        right: 0;
+        width: 52%;
+        height: 54%;
+    }
+    &__saw2 {
+        position: absolute;
+        top: 0;
+        left: 1%;
+        width: 83%;
+        height: 76%
+    }
+    &__saw1 {
+        position: absolute;
+        top: 69%;
+        left: 0;
+        width: 89%;
+        height: 62%;
+    }
+
+    &__img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+    &__block-title {
+        position: relative;
+        max-width: 450px;
+        margin: 59px auto 78px;
+        @media (max-width: 768px) {
+            margin: 10% auto 10%;
+        }
+    }
+    &__sub-title {
+        font-weight: 700;
+        font-size: 36.65px;
+        line-height: 140%;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+
+    &__three-rays {
+        position: absolute;
+        width: 67px;
+        height: 72px;
+        transform: rotateZ(274deg);
+        top: -52px;
+        left: 0px;
+    }
+    &__space {
+        display: block;
+    }
+    &__dinosaur {
+        position: absolute;
+        top: -57px;
+        right: -44px;
+        width: 89px;
+        height: 86px;
+    }
+}
+
+a.text-underline {
+    text-decoration: underline;
+}

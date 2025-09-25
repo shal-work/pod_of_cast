@@ -2,6 +2,12 @@
     position: relative;
     width: 100%;
     height: 100%;
+    @media (min-width: 1440px) {
+        height: auto;
+    }
+    @media (max-width: 768px) {
+        height: auto;
+    }
     &__ellipse {
         position: absolute;
         top: 33%;
@@ -11,7 +17,7 @@
     }
     &__crooked {
         position: absolute;
-        top: 56%;
+        top: 55%;
         left: 40%;
         width: 21%;
         height: 16%;

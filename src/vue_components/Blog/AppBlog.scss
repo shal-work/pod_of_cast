@@ -1,11 +1,8 @@
 .blog {
-    padding: 125px 125px 95px;
-    // padding: min(124px, max(var(--vw)* 124, 80px));
     padding-top: min(124px, max(var(--vw)* 124, 80px));
     padding-left: min(124px, max(var(--vw)* 124, 80px));
-    padding-right:min(124px, max(var(--vw)* 124, 80px));
     padding-right: min(124px, max(var(--vw)* 124, 80px));
-    padding-bottom:  min(95px, max(var(--vw)* 95, 80px));;
+    padding-bottom:  min(95px, max(var(--vw)* 95, 80px));
     background-color: var(--white);
     position: relative;
     @media (max-width: 768px) {
@@ -15,12 +12,6 @@
     }
 
     &__title {
-        font-weight: 700;
-        font-size: 59.3px;
-        font-size: min(59.3px, max(var(--vw) * 59.3, 44px));
-        line-height: 120%;
-        letter-spacing: -0.02em;
-        text-align: center;
         margin-bottom: 18px;
     }
 
@@ -36,105 +27,6 @@
         position: relative;
         max-width: 1192px;
         margin: 0 auto;
-        @media (max-width: 1407px) {
-            max-width: 540px;
-        }
-    }
-    &__cards {
-        position: relative;
-        margin-top: 103px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        margin-bottom: 101px;
-    }
-
-    &__card {
-        max-width: 570px;
-        border-radius: 8px;
-        border-width: 2px;
-        border: 2px solid var(--black);
-        padding: 13px;
-        z-index: 10;
-        background-color: var(--white);
-    }
-    &__hover {
-        box-shadow: 10px 10px 0px 0px var(--black);
-    }
-    &__picture {
-        margin-bottom: 33px;
-    }
-
-    &__img {
-        width: 100%;
-        height: auto;
-    }
-    &__block-text {
-        border-bottom: 0.5px solid var(--davys-grey);
-        margin-bottom: 17px;
-        padding-bottom: 24px;
-    }
-
-    &__card-sub-title {
-        font-weight: 700;
-        color:  var(--davys-grey);
-        margin-bottom: 6px;
-    }
-
-    &__card-title {
-        font-weight: 700;
-        font-size: 36.65px;
-        font-size: min(36.65px, max(var(--vw)* 36.65, 28px));
-        line-height: 140%;
-        line-height: min(140%, max(var(--vw)* 140, 100%));
-        letter-spacing: -0.02em;
-        color: var(--black);
-        margin-bottom: 20px;
-    }
-
-    &__title-hover {
-        color: var(--vermillion);
-    }
-
-    &__card-text {
-        width: 100%;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 160%;
-        letter-spacing: 0;
-    }
-
-    &__card-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__card-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-    }
-
-    &__card-btn {
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 160%;
-        letter-spacing: 0;
-        color:  var(--davys-grey);
-    }
-
-    &__card-date {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 160%;
-        letter-spacing: 0;
-        color:  var(--davys-grey);
     }
     &__button {
         text-align: center;
@@ -148,9 +40,7 @@
         position: absolute;
         width: min(264px, max(var(--vw)* 264, 130px));
         height: min(190px, max(var(--vw)* 190, 130px));
-        // width: 264px;
-        // height: 190px;
-        top: -73px;
+        top: -19px;
         left: -112px;
         left: -9%;
         transform: rotateZ(22deg);
@@ -158,8 +48,7 @@
     &__dinosaur {
         position: absolute;
         top: inherit;
-        bottom: -110px;
-        left: 93%;
+        bottom: -62px;
         left: inherit;
         right: -87px;
         width: min(173px, max(var(--vw)* 173, 130px));
@@ -173,4 +62,18 @@
     &__squiggle {
         top: 25px;
     }
+    &_single-blog {
+       padding-top: 0;   
+    }
+}
+
+.block-cards {
+    position: relative;
+    margin-top: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    row-gap: 40px;
+    margin-bottom: 51px;
 }

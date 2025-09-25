@@ -1,6 +1,28 @@
 .platform-icon {
     display: flex;
     position: absolute;
-    top: 6%;
+    top: 5%;
     right: 5%;
+}
+.icon12 {
+	margin-right: 10px;
+	@media (min-width: 769px) {
+		max-width: 12px;
+		max-height: 12px;
+		margin-right: 5px;
+	}
+	@media (max-width: 768px) {
+		max-width: 24px;
+		max-height: 24px;
+	}
+}
+.icon30 {
+	max-width: 30px;
+	max-height: 30px;
+	margin-right: 16px;
+	@media (max-width: 420px) {
+		max-width: 24px;
+		max-height: 24px;
+		margin-right: 10px;
+	}
 }

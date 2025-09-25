@@ -1,0 +1,94 @@
+.sponsor {
+    background-color: var(--champagne);
+    padding-top: 140px;
+    position: relative;
+    padding-bottom: 148px;
+    &__block-title {
+        position: relative;
+        max-width: 531px;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-bottom: 17px;
+    }
+    &__sup-title {
+        font-family: Montserrat Alternates;
+        font-weight: 500;
+        font-size: 22.65px;
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+    }
+    &__rays {
+        position: absolute;
+        top: -43px;
+        width: 85px;
+        height: 74px;
+    }
+    &__scroll {
+        display: flex;
+        margin-top: min(100px, max(var(--vw) * 100, 34px));
+        margin-bottom: 64px;
+        transform: translateX(min(140px, max(var(--vw) * 140, 24px)));
+        width: fit-content;
+        transition: transform 0.65s cubic-bezier(0.1, 1, 0.1, 1);
+        will-change: transform;
+        @media (min-width: 1920px) {
+            transform: none;
+            width: 100%;
+            justify-content: center;
+        }
+        @media (max-width: 768px) {
+            transform: none;
+            padding-left: 20px;
+        }
+    }
+    &__item {
+        background-color: var(--white);
+        max-width: 570px;
+        width: 570px;
+        padding: min(54px, max(var(--vw) * 54, 24px)) min(42px, max(var(--vw) * 42, 24px));
+        padding: 40px 42px 32px;
+        border-radius: 8px;
+        position: relative;
+        margin-right: 20px;
+        border: 1px solid var(--black);
+        &:last-child {
+            margin-right: 0;
+        }
+        @media (max-width: 768px) {
+            width: 91vw;
+            height: auto;
+        }
+    }
+    &__social {
+        border-bottom: 1px solid var(--davys-grey);
+        margin: 0 auto 29px;
+        width: 73%;
+        padding-bottom: 14px;
+        @media (max-width: 768px) {
+            width: auto;
+            height: auto;
+        }
+    }
+    &__link {
+        display: block;
+    }
+    &__svg {
+        height: 54px;
+        width: 351px;
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 7vw;
+            min-height: 30px;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+    }
+}
+

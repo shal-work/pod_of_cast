@@ -3,7 +3,6 @@
     background-color: var(--alice-blue);
     position: relative;
     height: 816px;
-    // height: min(816px, max(var(--vw)* 816, 740px));
     overflow: hidden;
     &__beta {
         border: 1px solid var(--vermillion-contrast);
@@ -17,16 +16,10 @@
         line-height: 160%;
         letter-spacing: 0px;
         color: var(--vermillion-contrast);
-        margin-bottom: 23px;
+        margin-bottom: 20px;
+        margin-top: 4px;
     }
     &__title {
-        font-weight: 700;
-        // font-size: 59.3px;
-        font-size: min(59.3px, max(var(--vw)* 59.3, 40px));
-        line-height: 120%;
-        letter-spacing: -0.02em;
-        text-align: center;
-        // max-width: 486px;
         max-width: min(486px, max(var(--vw)* 486, 300px));
         margin: 0 auto;
         margin-bottom: 26px;
@@ -41,8 +34,8 @@
         letter-spacing: 0;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 42px;
-        margin-bottom: min(140px, max(var(--vw)* 140, 42px));
+        margin-bottom: min(144px, max(var(--vw)* 144, 42px));
+        margin-bottom: min(139px, max(var(--vw)* 139, 42px));
         max-width: min(486px, max(var(--vw)* 486, 300px));
     }
     &__control {
@@ -57,8 +50,8 @@
         column-gap: 10px;
     }
     &__btn {
-        padding: 16px 36px;
-        margin-bottom: 27px;
+        padding: 18px 36px;
+        margin-bottom: 22px;
         box-shadow: 6px 6px 0px 0px var(--shadow);
         font-weight: 700;
         line-height: 160%;
@@ -71,7 +64,6 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;       
-        width: 1645px; 
         width: min(1645px, max(var(--vw)* 1645, 400px));
         @media (max-width: 768px ) {
             width: 100%;
@@ -81,10 +73,8 @@
         position: relative;
         height: 768px;
         width: 532px;
-        top: -275px;
+        top: -279px;
         left: -93px;
-        // min-width: 240px;
-        // min-height: 300px;
         @media (max-width: 768px ) {
             left: -21%;
             height: 768px;
@@ -155,28 +145,17 @@
 
     &__tangle {
         position: relative;
-        // top: -323px;
-        // bottom: 321px;
         bottom: min(321px, max(var(--vw)* 321, 10px));
         right: -6px;
-
-
         top: -315px;
         right: -55px;
-
-
-        // width: 208px;
         width: min(288px, max(var(--vw)* 288, 50px));
-        // height: 207px;
         height: min(207px, max(var(--vw)* 207, 50px));
-        // height: 0;
         @media (max-width: 1200px) {
             top: auto;
         }
     }
     &__tangle-svg {
-        // width: 208px;
-        // height: 211px;
         width: 100%;
         height: 100%;
     }

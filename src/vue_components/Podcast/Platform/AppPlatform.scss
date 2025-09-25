@@ -1,7 +1,5 @@
 .platform {
-    margin-top: min(101px, max(var(--vw)* 101, 40px));
-    margin-top: 121px;
-    // margin-bottom: -14px;
+    margin-top: min(121px, max(var(--vw)* 121, 40px));
     padding-bottom: 137px;
     &__row {
         display: flex;

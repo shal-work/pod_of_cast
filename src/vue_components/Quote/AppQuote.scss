@@ -8,23 +8,24 @@
         padding: 40px 20px;
     }
     &__title {
-        font-family: Montserrat Alternates;
-        font-weight: 700;
-        font-size: 36.65px;
-        font-size: min(36.65px, max(var(--vw)* 36.65, 28px));
-        line-height: 140%;
-        letter-spacing: -0.02em;
         text-align: center;
         margin: 40px 0;
+        &_text-overflow {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 558px;
+            width: 100%;
+            margin: 40px auto;
+        }
     }
-
     &__blob {
         position: absolute;
         top: -57px;
-        right: -111px;
+        right: max(-62px, min(var(--vw)* -62, -30px));
         rotate: 70deg;
-        width: 285px;
-        height: 148px;
+        width: min(187px, max(var(--vw)* 187, 100px));
+        height: min(148px, max(var(--vw)* 148, 100px));
     }
 
     &__crooked {
@@ -35,5 +36,10 @@
         height: 133px;
         width: 346px;
         stroke-width: 1;
+    }
+    &__user {
+        @media (min-width: 1441px) {
+            max-width: none;
+        }
     }
 }

@@ -63,7 +63,7 @@ $.prototype.index = function() {
 $.prototype.find = function(selector) {
     let numberOfItems = 0;
     let counter = 0;
-
+    debugger
     const copyObj = Object.assign({}, this);
 
     for (let i = 0; i < copyObj.length; i++) {

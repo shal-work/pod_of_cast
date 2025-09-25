@@ -1,0 +1,41 @@
+.featured {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    flex-wrap: wrap;
+    top: min(122px, max(var(--vw)* 122, 6px));
+    &__item {
+        padding: min(58px, max(var(--vw)* 58, 30px)) 0;
+        background-color: var(--white);
+        box-shadow: 5px 5px 0px 0px var(--vermillion);
+        border-radius: 8px;
+        border: 2px solid var(--black);
+        text-align: center;
+        flex: 0 1 373px;
+    }
+    
+    &__value {
+        font-weight: 700;
+        font-size: 59.3px;
+        line-height: 120%;
+        letter-spacing: -0.02em;
+        letter-spacing: -5px;
+        color: var(--vermillion);
+        margin-bottom: 20px;
+
+        &_color-black {
+            color: var(--black);
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+}

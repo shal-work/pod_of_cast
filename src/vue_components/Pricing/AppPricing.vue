@@ -1,7 +1,7 @@
 <template>
-    <div class="pricing">
+    <section class="pricing">
         <div class="pricing__headlines">
-            <h2 class="pricing__title reset">Become our sponsor</h2>
+            <h2 class="title-section pricing__title reset">Become our sponsor</h2>
             <h3 class="pricing__sub-title reset">Get exclusive episodes, merch and more</h3>
             <div class="pricing__three-rays">
                 <svg class="svg">
@@ -19,7 +19,7 @@
             <div class="pricing__cards">
                 <div class="pricing__card">
                     <div class="pricing__price">
-                        <h4 class="pricing__card-title reset">Member</h4>
+                        <h4 class="title-header pricing__card-title reset">Member</h4>
                         <p class="pricing__text reset">Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
                         <div class="pricing__control">
                             <button class="pricing__btn btn btn_black text-nobreak text-uppercase" aria-label="subscribe">SUBSCRIBE</button>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="pricing__card">
                     <div class="pricing__price pricing__popular">
-                        <h4 class="pricing__card-title reset pricing__card-popular">Family</h4>
+                        <h4 class="title-header pricing__card-title reset pricing__card-popular">Family</h4>
                         <p class="pricing__text reset">Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
                         <div class="pricing__control">
                             <button class="pricing__btn btn btn_black text-nobreak text-uppercase" aria-label="subscribe">SUBSCRIBE</button>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="pricing__benefits pricing__popular">
-                        <h5 class="pricing__benefits-title reset">What’s included:</h5>
+                        <h5 class="title-header pricing__benefits-title reset">What’s included:</h5>
                         <ul class="pricing__benefits-list">
                             <li class="pricing__benefits-item pricing__benefits-item_bold">Everything in Tier 1</li>
                             <li class="pricing__benefits-item">Free tickets to Events</li>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="pricing__card">
                     <div class="pricing__price">
-                        <h4 class="pricing__card-title reset">Official</h4>
+                        <h4 class="title-header pricing__card-title reset">Official</h4>
                         <p class="pricing__text reset">Lorem ipsum dolor sit amet consectet cing elit, sed do eiusmod tempor.</p>
                         <div class="pricing__control">
                             <button class="pricing__btn btn btn_black text-nobreak text-uppercase" aria-label="subscribe">SUBSCRIBE</button>
@@ -94,5 +94,5 @@
                 <use xlink:href="@/assets/img/spriteFigure.svg#squiggle"></use>
             </svg>
         </div>
-    </div>
+    </section>
 </template>

@@ -4,10 +4,10 @@
 @import './helpers/classes.scss';
 
 // vue_components
-@import '@/page/PageHome/AppHome.scss';
+@import '@/page/PageHome/AppPageHome.scss';
 @import '@/vue_components/Headers/AppHeaders.scss';
 @import '@/vue_components/Footer/AppFooter.scss';
-@import '@/vue_components/Menu/AppMenu.scss';
+@import '@/vue_components/Navbar/AppNavbar.scss';
 @import '@/vue_components/Logo/AppLogo.scss';
 @import '@/vue_components/Podcast/PodcastTitle/AppPodcastTitle.scss';
 @import '@/vue_components/Podcast/Covers/AppCovers.scss';
@@ -28,7 +28,16 @@
 @import '@/vue_components/Pricing/AppPricing.scss';
 @import '@/vue_components/Blog/AppBlog.scss';
 @import '@/vue_components/Cta/AppCta.scss';
-
+@import '@/vue_components/Featured/AppFeatured.scss';
+@import '@/vue_components/Listeners/AppListeners.scss';
+@import '@/vue_components/Host/AppHost.scss';
+@import '@/vue_components/Sponsor/AppSponsor.scss';
+@import '@/vue_components/Contact/AppContact.scss';
+@import '@/vue_components/LatestEpisode/AppLatestEpisode.scss';
+@import '@/vue_components/Post/AppPost.scss';
+@import '@/vue_components/LatestPosts/AppLatestPosts.scss';
+@import '@/vue_components/Richtext/AppRichtext.scss';
+@import '@/page/PageSingleBlog/AppPageSingleBlog.scss';
 
 
 

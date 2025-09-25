@@ -1,9 +1,9 @@
 <template>
-    <div class="cta">
+    <section class="cta">
         <div class="cta__beta">
             BETA
         </div>
-        <h3 class="cta__title reset">
+        <h3 class="title-section cta__title reset">
             Available now Pod of Cast App
         </h3>
         <h4 class="cta__sub-title reset">
@@ -61,18 +61,12 @@
                 </picture>  
             </div>
             <div class="cta__picture cta__play">
-
-
-
-
                 <picture>
                     <source type="image/webp" srcset="@/assets/img/play_421_515.webp" media="(max-width: 412px)">
                     <source type="image/png" srcset="@/assets/img/play_421_515.png" media="(max-width: 412px)">
                     <source type="image/webp" srcset="@/assets/img/play_614_751.webp">
                     <img src="@/assets/img/play_614_751.png" class="cta__img" alt="play.png" width="614" height="751">
                 </picture>  
-                
-                
                 <div class="cta__tangle">
                     <svg class="cta__tangle-svg">
                         <use xlink:href="@/assets/img/spriteFigure.svg#tangle"></use>
@@ -80,7 +74,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 </template>
 

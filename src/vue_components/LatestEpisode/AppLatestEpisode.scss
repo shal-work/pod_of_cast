@@ -1,0 +1,43 @@
+.latest-episode {
+    position: relative;
+    padding: min(140px, max(var(--vw) * 140, 80px));
+    padding-bottom: 140px;
+    @media (max-width: 768px) {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    &__decor-title {
+        position: absolute;
+        margin: 0 auto;
+        display: block;
+        width: min(550px, max(var(--vw) * 550, 352px));
+        height: auto;
+    }    
+    &__three-rays {
+        position: absolute;
+        top: -39px;
+        left: 0;
+        width: 65px;
+        height: 65px;
+        transform: rotateZ(280deg);
+    }
+    &__dinosaur {
+        position: relative;
+        transform: rotateZ(181deg);
+        left: -16%;
+        bottom: -119px;
+        width: 30%;
+        height: 0;
+        z-index: 20;
+    }
+    &__svg {
+        height: auto;
+        width: 100%;
+        pointer-events: none; 
+        transform: scale(1.2);
+    }
+
+    &__squiggle {
+        top: 69px;
+    }
+}

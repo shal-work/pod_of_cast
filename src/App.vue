@@ -12,5 +12,6 @@
 	import AppFooter from '@/vue_components/Footer/AppFooter'
 	import '@/js/js.js'
 
+	
 
 </script>

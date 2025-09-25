@@ -4,7 +4,7 @@
             <AppLogo/>
             <div class="header__block">
                 <nav class="header__menu">
-                    <AppMenu/>
+                    <AppNavbar/>
                 </nav>
                 <div class="header__btns">
                     <button class="header__btn btn btn_light text-uppercase text-nobreak">
@@ -26,7 +26,7 @@
 
 
 <script setup>
-    import AppMenu from '@/vue_components/Menu/AppMenu';
+    import AppNavbar from '@/vue_components/Navbar/AppNavbar';
     import AppLogo from '@/vue_components/Logo/AppLogo.vue';
 
     

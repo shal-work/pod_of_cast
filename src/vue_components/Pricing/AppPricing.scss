@@ -1,7 +1,6 @@
 .pricing {
     background-color: var(--white);
-    padding: 140px 140px 0;
-    padding: min(140px, max(var(--vw)* 140, 80px)) min(140px, max(var(--vw)* 140, 44px)) 0;
+      padding: min(140px, max(var(--vw)* 140, 80px)) min(140px, max(var(--vw)* 140, 44px)) 0;
     position: relative;
     @media (max-width: 768px) {
         padding-left: 24px;
@@ -13,12 +12,6 @@
         margin: 0 auto;
     }
     &__title {
-        font-weight: 700;
-        // font-size: 59.3px;
-        font-size:  min(59.3px, max(var(--vw)* 59.3, 44px));
-        line-height: 120%;
-        letter-spacing: -0.02em;
-        text-align: center;
         margin-bottom: 18px;
     }
 
@@ -29,7 +22,6 @@
         letter-spacing: 0;
         text-align: center;
         color: var(--davys-grey);
-        // margin-bottom: 101px;
         margin-bottom: min(101px, max(var(--vw)* 101, 44px));
     }
     &__body {
@@ -46,10 +38,10 @@
     &__price {
         border-radius: 8px;
         border: 1.5px solid var(--black);
-        padding: 60px 40px 30px; 
         padding-top: min(60px, max(var(--vw)* 60, 24px));
         padding-left: min(40px, max(var(--vw)* 40, 24px)); 
         padding-right: min(40px, max(var(--vw)* 40, 24px));  
+        padding-bottom: 30px;
         margin-bottom: min(21px, max(var(--vw)* 21, 12px)); 
         background-color: var(--white);
         z-index: 10;
@@ -74,6 +66,7 @@
             border: none;
             border-radius: 0 0 8px 8px;
             padding: 20px;
+            min-height: auto;
         }
         @media (max-width: 768px) {
             min-height: initial;
@@ -94,10 +87,6 @@
         }
     }
     &__card-title {
-        font-weight: 700;
-        font-size: 36.65px;
-        line-height: 140%;
-        letter-spacing: -0.02em;
         margin-bottom: 20px;
     }
     &__card-popular {
@@ -130,6 +119,10 @@
         margin-top: min(90px, max(var(--vw)* 90, 40px)); 
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 420px) {
+            row-gap: 20px;
+        }
     }
     &__value {
         font-weight: 700;
@@ -137,7 +130,6 @@
         line-height: 152%;
         letter-spacing: -0.02em;
         color: var(--vermillion);
-        // padding-top: 10px;
         &::after {
             content: '/month';
             font-family: Montserrat Alternates;
@@ -175,10 +167,11 @@
             display: inline-block;
             width: 10px; 
         }
+        &_bold {
+            font-weight: 700;
+        }
     }
-    &__benefits-item_bold {
-        font-weight: 700;
-    }
+
     &__popular {
         background-color: var(--champagne);
     }
@@ -196,36 +189,11 @@
         left: 92%;
         width: 16%;
         height: auto;
-        // width: 185px;
-        // height: 151px;
         transform: rotateZ(73deg);
     }
     &__crooked {
-        // position: absolute;
-        // top: 611px;
-        // left: -90px;
-        // width: 16%;
-        // height: 19%;
-        // transform: rotateZ(211deg);
-
         position: relative;
-        // top: -85px;
-        // left: -90px;
-        // width: 16%;
-        // height: 19%;
-        // width: 185px;
-        // height: 185px;
         transform: rotateZ(211deg);
-
-
-
-        // top: -82px;
-        // left: -65px;
-        // width: 16%;
-        // height: 19%;
-        // width: 137px;
-        // height: 140px;
-
         position: relative;
         top: -94px;
         left: -65px;

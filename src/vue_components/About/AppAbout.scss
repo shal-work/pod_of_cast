@@ -3,17 +3,11 @@
     padding-top: min(144px, max(var(--vw)* 144, 100px));
     padding-bottom: 138px;
     &__title {
-        font-weight: 700;
-        font-size: min(59.3px, max(var(--vw)* 59.3, 28px));
-        line-height: 120%;
-        letter-spacing: -0.02em;
-        text-align: center;
         padding: 0  min(353px, max(var(--vw)* 353, 100px));
         @media (max-width: 768px) {
             padding: 0 13vw;
         }
     }
-
     &__block {
         display: flex;
         flex-wrap: wrap;

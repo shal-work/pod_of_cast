@@ -22,32 +22,30 @@
                         <svg class="icon__item">
                             <use xlink:href="@/assets/img/spriteIco.svg#tiktok"></use>
                         </svg>
-                    </a>                    
+                    </a>
                 </div>
             </div>
             <div class="footer-menu  ">
                 <ul class="footer-menu__list reset">
                     <li class="footer-menu__item">
-                        <RouterLink to="/" class="footer-menu__link text-nobreak underline-anime" aria-label="Page Episodes">About</RouterLink>
+                        <RouterLink to="/about" class="footer-menu__link text-nobreak underline-anime" aria-label="Page About">About</RouterLink>
                     </li>
                     <li class="footer-menu__item">
-                        <RouterLink to="/" class="footer-menu__link footer-menu__active text-nobreak underline-anime" aria-label="Page About">Testimonials</RouterLink>
+                        <RouterLink to="/detail" class="footer-menu__link footer-menu__active text-nobreak underline-anime" aria-label="Page Testimonials">Testimonials</RouterLink>
                     </li>
                     <li class="footer-menu__item">
-                        <RouterLink to="/" class="footer-menu__link text-nobreak underline-anime" aria-label="More">Features</RouterLink>
+                        <RouterLink to="/article" class="footer-menu__link text-nobreak underline-anime" aria-label="Page Features">Features</RouterLink>
                     </li>
                 </ul>
-            <!-- </div> -->
-            <!-- <div class="footer__item"> -->
                 <ul class="footer-menu__list reset">
                     <li class="footer-menu__item">
-                        <RouterLink to="/" class="footer-menu__link footer-menu__active text-nobreak underline-anime" aria-label="Page Episodes">Episodes</RouterLink>
+                        <RouterLink to="/detail" class="footer-menu__link footer-menu__active text-nobreak underline-anime" aria-label="Page Episodes">Episodes</RouterLink>
                     </li>
                     <li class="footer-menu__item">
-                        <RouterLink to="/" class="footer-menu__link text-nobreak underline-anime" aria-label="Page About">Pricing</RouterLink>
+                        <RouterLink to="/single-blog/1" class="footer-menu__link text-nobreak underline-anime" aria-label="Page Pricing">Pricing</RouterLink>
                     </li>
                     <li class="footer-menu__item">
-                        <RouterLink to="/" class="footer-menu__link text-nobreak underline-anime" aria-label="More">Blog</RouterLink>
+                        <RouterLink to="/article" class="footer-menu__link text-nobreak underline-anime" aria-label="Page Blog">Blog</RouterLink>
                     </li>
                 </ul>
             </div>
@@ -72,24 +70,21 @@
                         </a>
                     </div>
                 </div>
-                <!-- <div class="footer__wrep"> -->
-                    <div class="footer__app">
-                        <h2 class="footer__title reset">App available on:</h2>
-                        <div class="footer__link">
-                            <a href="#" class="footer__icon footer__app-icon" aria-label="#app-store">
-                                <svg class="svg">
-                                    <use xlink:href="@/assets/img/spriteIco.svg#app_store"></use>
-                                </svg>
-                            </a>
-                            <a href="#" class="footer__app-icon" aria-label="google-play">
-                                <svg class="svg">
-                                    <use xlink:href="@/assets/img/spriteIco.svg#google_play"></use>
-                                </svg>
-                            </a>
-                        </div>
+                <div class="footer__app">
+                    <h2 class="footer__title reset">App available on:</h2>
+                    <div class="footer__link-app">
+                        <a href="#" class="footer__icon footer__app-icon" aria-label="#app-store">
+                            <svg class="svg">
+                                <use xlink:href="@/assets/img/spriteIco.svg#app_store"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__app-icon" aria-label="google-play">
+                            <svg class="svg">
+                                <use xlink:href="@/assets/img/spriteIco.svg#google_play"></use>
+                            </svg>
+                        </a>
                     </div>
-                <!-- </div> -->
-
+                </div>
             </div>
         </div>
         <div class="footer__bottom">

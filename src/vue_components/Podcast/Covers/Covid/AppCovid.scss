@@ -1,5 +1,13 @@
 .covid {
     position: relative;
+    width: 100%;
+    height: 100%;
+    @media (min-width: 1440px) {
+        height: auto;
+    }
+    @media (max-width: 768px) {
+        height: auto;
+    }
     &__covid1 {
         position: absolute;
         top: 43%;
@@ -10,7 +18,7 @@
     &__covid2 {
         position: absolute;
         top: 3%;
-        left: 24%;
+        left: 23%;
         width: 29%;
         height: 30%;
     }

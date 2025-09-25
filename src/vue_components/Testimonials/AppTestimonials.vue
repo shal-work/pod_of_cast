@@ -1,6 +1,6 @@
 <template>
-    <div class="testimonials">
-        <h2 class="testimonials__title reset">What our listeners say</h2>
+    <section class="testimonials">
+        <h2 class="title-section testimonials__title reset">What our listeners say</h2>
         <p class="testimonials__text testimonials__text_paragraph  reset">Their experience throughout every platform</p>
         <div class="testimonials__scroll">
             <div class="testimonials__item ">
@@ -74,7 +74,7 @@
             </div>
         </div>
         <div class="control">
-            <button class="arrow arrow_left arrow_default" data-slide="prev" aria-label="prev">
+            <button class="arrow arrow_left arrow-default" data-slide="prev" aria-label="prev">
                 <svg class="svg svg_stroke-vermillion">
                     <use xlink:href="@/assets/img/spriteFigure.svg#arrow"></use>
                 </svg>
@@ -95,7 +95,7 @@
                 <use xlink:href="@/assets/img/spriteFigure.svg#squiggle"></use>
             </svg>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>

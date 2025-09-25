@@ -1,4 +1,4 @@
-const observer = (upSelector) => {
+const observerVue = (upSelector) => {
 	const options = {
 		rootMargin: '-10px'
 	};
@@ -27,7 +27,7 @@ const observer = (upSelector) => {
 
 };
 
-export default observer;
+export default observerVue;
 
 
 

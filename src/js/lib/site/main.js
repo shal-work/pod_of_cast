@@ -1,78 +1,80 @@
 import SliderTestimonials from '../components/slider-testimonials';
 import SliderCover from '../components/slider-covers';
-
-import observer from'../components/observer-vue';
+import observerVue from '../components/observer-vue';
 
 window.addEventListener('DOMContentLoaded', (e) => {
-    $('.header__burger').on('click', () => {toggleBurger()});
-    $('.menu').on('click', () => {toggleBurger()});
-    $('.btn-divesea').on('click', () => {toggleBurger()});
-    $('.header__btn').on('click', () => {toggleBurger()});
-    
-    function toggleBurger () {
+    $('.header__burger').on('click', () => {       
         $('.header').toggleClass("fadeIn-open");
         // $('.page').toggleClass('none-scroll');
         $('body').toggleOverflow();
-        // $('body').toggleOverflow();
-    };
-
-    const covers = document.querySelector('.covers__slides');
-    covers.scrollTo({
-        left: 255,
-        behavior: 'smooth'
     });
 
-    const carousel = new SliderTestimonials ({
-        carousel: '.testimonials',
-        slides: '.testimonials__scroll',
-        item: '.testimonials__item ',
-        btnsNext: '[data-slide="next"]',
-        btnsPrev: '[data-slide="prev"]'
+    $('.menu__link').on('click', () => {
+        $('.menu__more').removeClass("open");
+        $('.header').removeClass("fadeIn-open");
+        $('body').offOverflow();
     });
-    carousel.render();
-
-    const move = new SliderCover ({
-        carousel: '.covers',
-        slides: '.covers__slides',
-        item: '.covers__item',
-        btnsNext: '[data-slide="next"]',
-        btnsPrev: '[data-slide="prev"]'
+    $('.header__btn').on('click', () => {
+        $('.menu__more').removeClass("open");
+        $('.header').removeClass("fadeIn-open");
+        $('body').offOverflow();
     });
-    move.render();
 
-    observer('.podcast-title');
-    observer('.about');
-    observer('.testimonials');
-    observer('.content');
-    observer('.pricing__body');
-    observer('.blog__wrep');
-    observer('.cta__gadget');
-    // const options = {
-    //     rootMargin: '-10px'
-    // };
-    // Создать наблюдателя
-    // const observer = new IntersectionObserver(entries => {
-    //     // перебор записей
-    //     entries.forEach(entry => {
-    //         let containerInner = entry.target.querySelectorAll('[data-animated]');
-    //         if (entry.isIntersecting ) {
-    //             containerInner.forEach(function(item) {
-    //                 let setaDataAimated = item.dataset.animated;
-    //                 item.classList.add(setaDataAimated);
-    //             })
-    //             return; // если класс добавлен, продолжать уже не надо
-    //         }
-    //         containerInner.forEach(function(item) {
-    //             let setaDataAimated = item.dataset.animated;
-    //             item.classList.remove(setaDataAimated);
-    //         });
-    //     });
-    // }, options);
+    $('.menu__btn').on('click', () => {
+        $('.menu__more').toggleClass("open");
+    });
+    
 
-    // // Сообщить наблюдателю, какие элементы следует отслеживать
-    // try {
-    //     observer.observe(document.querySelector('.podcast-title'));
-    // } catch (error) {}
+    //страница Home 
+    try {
+        const carousel = new SliderTestimonials ({
+            carousel: '.testimonials',
+            slides: '.testimonials__scroll',
+            item: '.testimonials__item ',
+            btnsNext: '[data-slide="next"]',
+            btnsPrev: '[data-slide="prev"]'
+        });
+        carousel.render();
+    } catch (error) {}
+    try {
+        const move = new SliderCover ({
+            carousel: '.covers',
+            slides: '.covers__slides',
+            item: '.covers__item',
+            btnsNext: '[data-slide="next"]',
+            btnsPrev: '[data-slide="prev"]'
+        });
+        move.render();
+    } catch (error) {}
+
+
+
+    //страница - About
+    try {
+        const carouselSponsorAbout = new SliderTestimonials ({
+            carousel: '.sponsor',
+            slides: '.sponsor__scroll',
+            item: '.sponsor__item ',
+            btnsNext: '[data-slide="next"]',
+            btnsPrev: '[data-slide="prev"]'
+        });
+        carouselSponsorAbout.render();
+
+    } catch (error) {}
+    
+    observerVue('.podcast-title');
+    observerVue('.about');
+    observerVue('.testimonials');
+    observerVue('.content');
+    observerVue('.pricing__body');
+    observerVue('.blog__wrep');
+    observerVue('.cta__gadget');
+    observerVue('.perplexed');
+    observerVue('.quote');
+
+    $('.card-link').on('click', () => {
+        location.reload();
+    });
 
 });
 
@@ -80,16 +82,27 @@ window.addEventListener('DOMContentLoaded', (e) => {
 let widthWidow = 0;
 window.addEventListener('resize', (e) => {
     if (widthWidow !== e.target.outerWidth) {
-        // делаем актуальный размер фона
-
+        // делаем актуальный размер
         widthWidow = e.currentTarget.innerWidth;
-        const carousel = new SliderTestimonials ({
-            carousel: '.testimonials',
-            slides: '.testimonials__scroll',
-            item: '.testimonials__item ',
-            btnsNext: '[data-slide="next"]',
-            btnsPrev: '[data-slide="prev"]'
-        })
-        carousel.render();
+        try {
+            const carousel = new SliderTestimonials ({
+                carousel: '.testimonials',
+                slides: '.testimonials__scroll',
+                item: '.testimonials__item ',
+                btnsNext: '[data-slide="next"]',
+                btnsPrev: '[data-slide="prev"]'
+            })
+            carousel.render();
+        } catch (error) { }
+        try {
+            const carouselSponsorAbout = new SliderTestimonials ({
+                carousel: '.sponsor',
+                slides: '.sponsor__scroll',
+                item: '.sponsor__item ',
+                btnsNext: '[data-slide="next"]',
+                btnsPrev: '[data-slide="prev"]'
+            });
+            carouselSponsorAbout.render();
+        } catch (error) { }
     }
 });

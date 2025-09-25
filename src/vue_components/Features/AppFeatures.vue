@@ -1,12 +1,14 @@
 <template>
-    <div class="features">
+    <section class="features">
         <div class="features__titles">
-            <h2 class="features__title reset">Membership benefits</h2> 
+            <h2 class="title-section features__title reset">Membership benefits</h2> 
             <p class="features__text reset">Become our sponsor and get all benefits</p>
-            <div class="features__dinosaur">
-                <svg class="svg">
-                    <use xlink:href="@/assets/img/spriteFigure.svg#dinosaur"></use>
-                </svg>
+            <div class="features__decor-title">
+                <div class="features__dinosaur">
+                    <svg class="svg">
+                        <use xlink:href="@/assets/img/spriteFigure.svg#dinosaur"></use>
+                    </svg>
+                </div>
             </div>
         </div>
         <div class="features__members">
@@ -62,7 +64,7 @@
             </svg>
        </div> 
 
-    </div>
+    </section>
 </template>
 
 <script setup>

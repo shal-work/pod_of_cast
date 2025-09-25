@@ -1,0 +1,25 @@
+.latest-posts {
+    margin-bottom: 89px;
+    &__decor-title {
+        position: absolute;
+        margin: 0 auto;
+        display: block;
+        width: min(466px, max(var(--vw) * 466, 271px));
+        height: auto;
+    }
+    &__three-rays {
+        position: absolute;
+        top: -43px;
+        left: 0;
+        width: 65px;
+        height: 65px;
+        transform: rotateZ(280deg);
+    }
+    &__blog {
+        margin-bottom: 77px;
+    }
+    &__squiggle {
+        top: 21px;
+    }
+}
+

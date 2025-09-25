@@ -13,7 +13,6 @@
 :root {
     --index: calc(1vw + 1vh);
     --vw: calc(100vw/1440);
-    // --container-padding-x: 165px;
     --container-padding-x: min(140px, max(var(--vw)* 140, 24px));
     --container-width: min(1920px, max(var(--vw)* 1920, 24px));
 }

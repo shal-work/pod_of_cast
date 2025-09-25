@@ -1,17 +1,11 @@
 'use strict'
 
-const ARROW_DEFAULT = 'arrow_default';
+const ARROW_DEFAULT = 'arrow-default';
 const ARROW_HIDE = 'arrow_hide';
 
 
-        // carousel: '.testimonials',
-        // slides: '.testimonials__scroll',
-        // item: '.testimonials__item ',
-        // btnsNext: '[data-slide="next"]',
-        // btnsPrev: '[data-slide="prev"]'
-
 export default class SliderTestimonials {
-    debugger
+    
 	constructor({ carousel = '', slides = '', item = '', btnsNext = '', btnsPrev = '' } = {}) {
 		this.carousel = document.querySelector(carousel);
 		this.slides = this.carousel.querySelector(slides); 
@@ -38,6 +32,12 @@ export default class SliderTestimonials {
 	    this.width = +this.item[0].offsetWidth + +this.marginRight;
 		this.slides.style.transform = '';
 		this.endIndex = this.item.length - this.quantityInWindow;
+		// debugger
+
+		this.btnsPrev.classList.remove(ARROW_DEFAULT );
+		this.btnsPrev.classList.remove(ARROW_HIDE);
+		this.btnsNext.classList.remove(ARROW_HIDE);
+
         if (this.endIndex <= 0) {
             if (this.btnsPrev !== '') {this.btnsPrev.classList.add(ARROW_HIDE)};
             if (this.btnsNext !== '') {this.btnsNext.classList.add(ARROW_HIDE)};

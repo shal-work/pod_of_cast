@@ -1,6 +1,6 @@
 'use strict'
 
-const ARROW_DEFAULT = 'arrow_default';
+const ARROW_DEFAULT = 'arrow-default';
 const ARROW_HIDE = 'arrow_hide';
 
 export default class SliderCover {
@@ -76,10 +76,6 @@ export default class SliderCover {
 		});
 	}
 	move() {
-		// alert({id: this.slideIndex, text: 'slideIndex', id1: this.endIndex, text1: 'endIndex', toString: function() {
-		// 	return `${this.text}: ${this.id}, ${this.text1}: ${this.id1}`
-		// }})
-		// debugger
 		if (this.direction === 'next') {
 			this.slideIndex++;
 		} else {
@@ -96,14 +92,7 @@ export default class SliderCover {
 		}
 		let step = this.direction === 'next' ? -(+this.width) : (+this.width);
 		this.offset += step;
-		// alert({id: this.direction, text: 'direction', toString: function() {
-		// 	return `${this.text}: ${this.id}`
-		// }})
-		// alert({id: this.step, text: 'step', toString: function() {
-		// 	return `${this.text}: ${this.id}`
-		// }})
 		this.slides.style.transform = `translateX(${this.offset}px)`;
-		// this.updateControl();
 	}
 	clickNext() {
 		if(this.btnsNext) {
