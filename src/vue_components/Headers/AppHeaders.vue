@@ -16,9 +16,9 @@
                 </div>
             </div>
 
-            <div class="header__burger">
-                <div class="icon-bar"></div>
-            </div>
+            <button type="button"  class="header__burger reset" aria-label="Открыть меню" aria-expanded="false">
+                <span class="icon-bar"></span>
+            </button>
         </div>
 
     </header>

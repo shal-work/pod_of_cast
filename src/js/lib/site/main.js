@@ -7,23 +7,37 @@ window.addEventListener('DOMContentLoaded', (e) => {
         $('.header').toggleClass("fadeIn-open");
         // $('.page').toggleClass('none-scroll');
         $('body').toggleOverflow();
+        toggleBurger();
     });
 
     $('.menu__link').on('click', () => {
         $('.menu__more').removeClass("open");
         $('.header').removeClass("fadeIn-open");
         $('body').offOverflow();
+        toggleBurger();
     });
     $('.header__btn').on('click', () => {
         $('.menu__more').removeClass("open");
         $('.header').removeClass("fadeIn-open");
         $('body').offOverflow();
+        toggleBurger();
     });
 
     $('.menu__btn').on('click', () => {
         $('.menu__more').toggleClass("open");
     });
     
+
+    function toggleBurger () {
+        $('.header__burger').toggleBooleanAttribute('aria-expanded');
+        const burger = document.querySelector('.header__burger');
+        let expanded = burger.getAttribute('aria-expanded') === 'true';  
+        if (Boolean(expanded)) {
+            $('.header__burger').toggleChangeAttribute('aria-label', 'Закрыть меню');
+        } else {
+            $('.header__burger').toggleChangeAttribute('aria-label', 'Открыть меню');
+        }
+    }
 
     //страница Home 
     try {
