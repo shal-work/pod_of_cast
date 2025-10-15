@@ -11,7 +11,6 @@
             </div>
             <div class="post__block-text">
                 <p class="post__card-sub-title text-uppercase reset">{{subtitle}}</p>
-                <p class="post__card-sub-title text-uppercase reset">{{id}}</p>
                 <h3 v-if="isBlog" class="post__card-title reset text-capitalize" :class="{ 'post__title-hover': isHover }">{{title}}</h3>
                 <h4 v-else class="post__card-title reset text-capitalize" :class="{ 'post__title-hover': isHover }">{{title}}</h4>
                 <p class="post__card-text reset">{{text}}</p>

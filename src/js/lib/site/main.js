@@ -25,6 +25,14 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
     $('.menu__btn').on('click', () => {
         $('.menu__more').toggleClass("open");
+        $('.menu__btn').toggleBooleanAttribute('aria-expanded');
+        const burger = document.querySelector('.menu__btn');
+        let expanded = burger.getAttribute('aria-expanded') === 'true';  
+        if (Boolean(expanded)) {
+            $('.menu__btn').toggleChangeAttribute('aria-label', 'Закрыть меню');
+        } else {
+            $('.menu__btn').toggleChangeAttribute('aria-label', 'Открыть меню');
+        }
     });
     
 

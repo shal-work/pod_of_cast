@@ -34,3 +34,26 @@ $.prototype.toggleAttribute = function (attributeName, value) {
 
     return this;
 };
+
+//новые 15.10.2025, так как работает выше, после удаления артибута
+$.prototype.toggleBooleanAttribute = function (attributeName) {
+    for (let i = 0; i < this.length; i++) {
+        if (this[i].hasAttribute(attributeName)) { //можно не проверять, работает
+            if (this[i].getAttribute(attributeName) == 'false') {
+                this[i].setAttribute(attributeName, true);
+            } else {
+                this[i].setAttribute(attributeName, false);
+            }          
+        }
+    }
+    return this;
+};
+
+$.prototype.toggleChangeAttribute = function (attributeName, value) {
+    for (let i = 0; i < this.length; i++) {
+        if (this[i].hasAttribute(attributeName)) { //можно не проверять, работает
+            this[i].setAttribute(attributeName, value);        
+        }
+    }
+    return this;
+};
